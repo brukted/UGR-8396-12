@@ -1,0 +1,24 @@
+.profile {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  gap: 2em;
+}
+
+.profile__image {
+  padding: 1rem;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+.profile__text {
+  padding: 1rem;
+  min-width: 3em;
+  max-width: 30em;
+  margin: auto;
+}

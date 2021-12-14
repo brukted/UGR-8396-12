@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
     <title>Contact</title>
   </head>
   <body>
@@ -27,12 +28,12 @@
       </button>
       <ul class="nav__list" id="nav-list">
         <li class="nav__item">
-          <a class="nav__link nav__link--active" href="../index.html">Home</a>
+          <a class="nav__link" href="../index.html">Home</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="about.html">About</a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item nav__item--active">
           <a class="nav__link" href="contact.html">Contact</a>
         </li>
         <li class="nav__item">
@@ -49,7 +50,40 @@
         </li>
       </ul>
     </nav>
-    <main class="profile"></main>
+    <main class="content">
+      <section class="contactMe">
+        <h1 class="contactMe__header">Contact Me</h1>
+        <p class="contactMe__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quis
+          incidunt quos suscipit totam eos assumenda sunt reiciendis, architecto
+          eum temporibus veritatis, libero, ullam amet possimus! Quas minima
+          distinctio et.
+        </p>
+        <div class="socialMedias">
+          <a title="facebook link" href="#" class="socialMedia__btn">
+            <span class="fab fa-facebook-f"></span>
+          </a>
+          <a  title="twitter link" href="#" class="socialMedia__btn">
+            <span class="fab fa-twitter"></span>
+          </a>
+          <a title="instagram link" href="#" class="socialMedia__btn">
+            <span class="fab fa-instagram"></span>
+          </button>
+          <a  title="linkedin link" href="#" class="socialMedia__btn">
+            <span class="fab fa-linkedin-in"></span>
+          </a>
+        </div>
+      </section>
+      <form class="form">
+        <h1 class="form__title">Subscribe to my weekly newsletters</h1>
+        <div class="form__inputGrid">
+        <label class="form__inputLabel"for="firstName">First name</label><input class="form__input" id = "firstName"type="text" name="firstName" placeholder="john"/>
+        <label class="form__inputLabel"for="lastName">Last name</label><input  class="form__input"id = "lastName"type="text" name="lastName" placeholder="doe" />
+        <label class="form__inputLabel"for="email">Email</label><input  class="form__input"id="email"type="email" name="email" placeholder="jhon.doe2432@xyz.com" />
+        </div>
+        <button class="form__subBtn"type="submit">Subscribe</button>
+      </form>
+    </main>
     <footer class="footer">
       <p class="footer__text">&copy; 2019, All rights reserved</p>
     </footer>
