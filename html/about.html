@@ -4,93 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Bruk Tedla</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>About</title>
   </head>
   <body>
-    <nav class="navigation">
-      <span class="navigation__logo">Bruk Tedla</span>
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Home</a>
+    <nav class="nav">
+      <span class="nav__logo">Bruk Tedla</span>
+      <button
+        id="nav-hamburger"
+        title="hamburger"
+        type="button"
+        class="nav__hamburger"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav__list" id="nav-list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--active" href="../index.html">Home</a>
         </li>
-        <li class="navigation__item">
-          <a
-            class="navigation__link navigation__link--active"
-            href="html/about.html"
-            >About</a
-          >
+        <li class="nav__item">
+          <a class="nav__link" href="about.html">About</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="html/contact.html">Contact</a>
+        <li class="nav__item">
+          <a class="nav__link" href="contact.html">Contact</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="html/testimonies.html"
-            >Testimonies</a
-          >
+        <li class="nav__item">
+          <a class="nav__link" href="testimonies.html">Testimonies</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="html/blog.html">Blog</a>
+        <li class="nav__item">
+          <a class="nav__link" href="blogs.html">Blog</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="html/portfoilo.html">Portfoilo</a>
+        <li class="nav__item">
+          <a class="nav__link" href="portfoilo.html">Portfoilo</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="html/services.html">services</a>
+        <li class="nav__item">
+          <a class="nav__link" href="services.html">Services</a>
         </li>
       </ul>
     </nav>
-    <main>
-      <section>
-        <figure>
-          <img src="images/bruktedla.jpg" alt="bruktedla" />
-        </figure>
-        <!--Contacts-->
-        <section class="contacts">
-          <div class="contacts__container">
-            <div class="contacts__item">
-              <h2 class="contacts__title">Contact Us</h2>
-              <p class="contacts__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum, quisquam.
-              </p>
-            </div>
-          </div>
-        </section>
-      </section>
-      <!--CV-->
-      <section>
-        <h1>Bruk Tedla</h1>
-        <!--Bio-->
-        <section>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            aliquid odio aut repellendus! Placeat, eum nobis. Obcaecati veniam
-            totam id alias quos illo impedit sequi velit enim atque, sunt sit.
-          </p>
-        </section>
-        <!--Education-->
-        <section>
-          <h2>Education</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            aliquid odio aut repellendus! Placeat, eum nobis. Obcaecati veniam
-            totam id alias quos illo impedit sequi velit enim atque, sunt sit.
-          </p>
-        </section>
-        <!--Experience-->
-        <section>
-          <h2>Experience</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            aliquid odio aut repellendus! Placeat, eum nobis. Obcaecati veniam
-            totam id alias quos illo impedit sequi velit enim atque, sunt sit.
-          </p>
-        </section>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2019, All rights reserved</p>
+    <main class="profile"></main>
+    <footer class="footer">
+      <p class="footer__text">&copy; 2019, All rights reserved</p>
     </footer>
   </body>
+  <script src="../js/script.js"></script>
 </html>
