@@ -46,9 +46,6 @@
 body {
   min-height: 100vh;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--background);
 }
 
 .nav {
@@ -61,7 +58,9 @@ body {
   overflow: hidden;
   padding: 1rem;
   flex-wrap: wrap;
+  grid-area: nav;
   justify-content: space-between;
+  height: auto;
 }
 
 .nav__logo {
@@ -115,7 +114,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 976px) {
   .nav__list {
     display: none;
   }
@@ -138,6 +137,8 @@ body {
   padding: 1.5em 0em;
   background-color: var(--surface);
   border-top: var(--outlineSize) solid var(--outline);
+  grid-area: footer;
+  height: auto;
 }
 
 .footer__text {
