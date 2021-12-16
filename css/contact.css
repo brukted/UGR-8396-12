@@ -13,7 +13,7 @@
 .contactMe {
   margin: 1em;
   padding: 3em;
-  border: 0.1em solid var(--outline);
+  border: var(--outlineSize) solid var(--outline);
   border-radius: 3em;
   background-color: var(--surface);
 }
@@ -32,7 +32,7 @@
   margin: 1em;
   padding: 3em;
   gap: 2em;
-  border: 0.1em solid var(--outline);
+  border: var(--outlineSize) solid var(--outline);
   border-radius: 3em;
   background-color: var(--surface);
 }
@@ -58,9 +58,14 @@
 
 .form__input {
   padding: 0.75em;
-  border: 0.1em solid var(--outline);
+  border: var(--outlineSize) solid var(--outline);
   border-radius: 1em;
   font-size: 1em;
+  width: 100%;
+}
+
+.form__input:focus {
+  border: var(--outlineSize) solid var(--primary);
 }
 
 .form__inputGrid {
