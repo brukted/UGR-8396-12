@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&family=Roboto:wght@300&display=swap");
 
+/* Resets */
 * {
   margin: 0em;
   padding: 0em;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  /**
-  * Material Design Colors
-  **/
+}
+
+/* Material Design Colors */
+.lightTheme {
   --primary: #000000;
   --onPrimary: #ffffff;
   --primaryContainer: #d6e2ff;
