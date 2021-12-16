@@ -139,6 +139,7 @@ body {
   border-top: var(--outlineSize) solid var(--outline);
   grid-area: footer;
   height: auto;
+  width: 100%;
 }
 
 .footer__text {
