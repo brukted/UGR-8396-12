@@ -1,3 +1,10 @@
+.body {
+  display: grid;
+  grid-template-areas: "nav" "search" "content" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+}
+
 .content {
   width: 100%;
   display: flex;
@@ -8,6 +15,7 @@
   align-content: flex-start;
   margin: auto;
   margin-top: 0em;
+  grid-area: content;
 }
 
 .searchBar {
@@ -19,6 +27,7 @@
   flex-wrap: nowrap;
   width: 100%;
   padding: 1em;
+  grid-area: search;
 }
 
 .searchBar__input {
@@ -64,8 +73,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
+  align-content: flex-start;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 2em;
   padding: 1em;
