@@ -10,12 +10,36 @@
   gap: 2em;
 }
 
+.body {
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "contactMe form"
+    "footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+@media screen and (max-width: 840px) {
+  .body {
+    display: grid;
+    grid-template-areas: "nav" "contactMe" "form" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+}
+
 .contactMe {
   margin: 1em;
   padding: 3em;
   border: var(--outlineSize) solid var(--outline);
   border-radius: 3em;
   background-color: var(--surface);
+  grid-area: contactMe;
 }
 
 .contactMe__text {
@@ -35,6 +59,7 @@
   border: var(--outlineSize) solid var(--outline);
   border-radius: 3em;
   background-color: var(--surface);
+  grid-area: form;
 }
 
 .form__title {
