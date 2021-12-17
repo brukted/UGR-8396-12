@@ -21,6 +21,21 @@
   grid-area: profile;
 }
 
+.profile__title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  padding: 1rem 0rem;
+  color: var(--onBackground);
+  opacity: var(--primaryText);
+}
+
+.profile__body {
+  color: var(--onBackground);
+  opacity: var(--secondaryText);
+}
+
 .image {
   padding: 1rem;
   margin: auto;
