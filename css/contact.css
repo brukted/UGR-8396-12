@@ -106,7 +106,7 @@
   align-content: center;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1064px) {
   .form__inputGrid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
