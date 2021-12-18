@@ -1,0 +1,113 @@
+.body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto 1fr auto;
+  grid-template-areas:
+    "nav"
+    "pageTitle"
+    "projectTags"
+    "projectsList"
+    "footer";
+  background-color: var(--background);
+}
+
+.pageTitle {
+  grid-area: pageTitle;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  color: var(--onBackground);
+  opacity: var(--primaryText);
+  align-items: center;
+}
+
+.projectTags {
+  grid-area: projectTags;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  background-color: transparent;
+}
+
+.projectTags__tag {
+  text-decoration: none;
+  padding: 0.75rem;
+  background-color: var(--primary);
+  color: var(--onPrimary);
+  opacity: var(--primaryText);
+  border-radius: 1.5rem;
+}
+
+.projectCategory__title {
+  padding: 0rem 1rem;
+  color: var(--onSurface);
+  opacity: var(--primaryText);
+}
+
+.projectCategories {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  margin-bottom: 1rem;
+}
+
+.projectCategory {
+  grid-area: projectsList;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  margin: auto;
+  margin: 1rem;
+  align-items: flex-start;
+  padding: 1rem;
+  border: var(--outlineSize) solid var(--outline);
+  border-radius: 1rem;
+  background: var(--surface);
+}
+
+.projectCategory__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .projectCategory__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .projectCategory__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projectCard {
+  background-color: var(--surface);
+  border-radius: 1rem;
+  border: var(--outlineSize) solid var(--outline);
+}
+
+.projectCard__image {
+  width: 100%;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.projectCard__body {
+  padding: 1rem;
+  max-width: 20em;
+  color: var(--onSurface);
+  opacity: var(--primaryText);
+}

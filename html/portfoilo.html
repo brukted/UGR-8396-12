@@ -12,9 +12,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/portfoilo.css" />
     <title>Portfoilo</title>
   </head>
-  <body>
+  <body class="body lightTheme">
     <nav class="nav">
       <span class="nav__logo">Bruk Tedla</span>
       <button
@@ -49,7 +50,32 @@
         </li>
       </ul>
     </nav>
-    <main class="profile"></main>
+
+    <h1 class="pageTitle">Projects</h1>
+    <nav class="projectTags">
+      <a class="projectTags__tag" href="#cpp">C++</a
+      ><a class="projectTags__tag" href="#web-dev">Web Dev</a
+      ><a class="projectTags__tag" href="#3D-graphics">3D Graphics</a>
+    </nav>
+    <div class="projectCategories">
+      <div class="projectCategory" id="cpp">
+        <h1 class="projectCategory__title">C++</h1>
+        <div class="projectCategory__list">
+          <article class="projectCard">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="project image"
+              class="projectCard__image"
+            />
+            <p class="projectCard__body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              animi.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer">
       <p class="footer__text">&copy; 2021, All rights reserved</p>
     </footer>
