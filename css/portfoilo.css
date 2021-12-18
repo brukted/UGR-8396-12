@@ -11,15 +11,18 @@
   background-color: var(--background);
 }
 
-.pageTitle {
+.pageHeader {
   grid-area: pageTitle;
-  margin: 1rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 1rem;
   background: transparent;
+}
+
+.pageHeader__title {
   color: var(--onBackground);
   opacity: var(--primaryText);
-  align-items: center;
 }
 
 .projectTags {
