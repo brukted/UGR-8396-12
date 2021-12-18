@@ -1,8 +1,12 @@
 .body {
   display: grid;
-  grid-template-areas: "nav nav" "image profile" "footer footer";
+  grid-template-areas:
+    "nav nav"
+    "image profile"
+    "footer footer";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr auto;
+  background: var(--background);
 }
 
 .profile {
