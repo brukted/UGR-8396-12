@@ -36,6 +36,7 @@
 }
 
 .serviceRow__body {
+  max-width: 40rem;
   padding: 1rem;
   grid-area: text;
 }
@@ -54,14 +55,21 @@
 
 .serviceRow__image {
   width: 100%;
+  max-height: 20rem;
   height: auto;
   overflow: hidden;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .serviceRow__imageWrapper {
   width: 100%;
+  display: flex;
   grid-area: image;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 @media screen and (max-width: 900px) {
