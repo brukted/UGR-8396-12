@@ -8,6 +8,19 @@
     "footer footer";
 }
 
+@media screen and (max-width: 730px) {
+  .body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "nav "
+      "aside "
+      "main"
+      "footer";
+  }
+}
+
 .aside {
   grid-area: aside;
   display: flex;
