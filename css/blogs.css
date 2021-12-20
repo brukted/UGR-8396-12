@@ -96,6 +96,7 @@
   /* padding: 1em; */
   border: var(--outlineSize) solid var(--outline);
   background-color: var(--surface);
+  color: var(--onSurface);
 }
 
 .blogCard__img {
@@ -110,12 +111,12 @@
 
 .blogCard__text {
   margin: 1em;
-  color: var(--onSurface);
   opacity: var(--helperText, 0.6);
 }
 
 .blogCard__title {
   margin: 1rem;
+  opacity: var(--primaryText);
 }
 
 .blogCard__link {

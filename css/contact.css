@@ -40,6 +40,8 @@
   border: var(--outlineSize) solid var(--outline);
   border-radius: 3em;
   background-color: var(--surface);
+  color: var(--onSurface);
+  opacity: var(--primaryText);
   grid-area: contactMe;
 }
 
@@ -60,6 +62,8 @@
   border: var(--outlineSize) solid var(--outline);
   border-radius: 3em;
   background-color: var(--surface);
+  color: var(--onSurface);
+  opacity: var(--primaryText);
   grid-area: form;
 }
 

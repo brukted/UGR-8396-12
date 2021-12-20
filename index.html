@@ -17,7 +17,7 @@
   </head>
   <body class="body lightTheme">
     <nav class="nav">
-      <span class="nav__logo">Bruk Tedla</span>
+      <span class="nav__logo" role="presentation">Bruk Tedla</span>
       <button
         id="nav-hamburger"
         title="hamburger"
@@ -50,9 +50,14 @@
         </li>
       </ul>
     </nav>
-    <img class="image" src="images/bruktedla.png" alt="bruktedla" />
+    <img
+      class="image"
+      src="images/bruktedla.png"
+      alt="photo of bruk tedla"
+      role="presentation"
+    />
     <main class="profile">
-      <h1 class="profile__title">Bruk Tedla</h1>
+      <h1 class="profile__title">Biruk Tedla</h1>
       <p class="profile__body">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
         aliquid odio aut repellendus! Placeat, eum nobis. Obcaecati veniam totam
@@ -60,7 +65,9 @@
       </p>
     </main>
     <footer class="footer">
-      <p class="footer__text">&copy; 2021, All rights reserved</p>
+      <p class="footer__text" aria-label="copyright">
+        &copy; 2021, All rights reserved
+      </p>
     </footer>
   </body>
   <script src="js/script.js"></script>

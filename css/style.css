@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 /* Resets */
 * {
@@ -31,13 +31,13 @@ body {
   --errorContainer: #ffdad4;
   --onError: #ffffff;
   --onErrorContainer: #410001;
-  --background: hsl(0, 0%, 95%);
+  --background: #fafafa;
   --onBackground: #1f1a1b;
   --surface: #ffffff;
   --onSurface: #1f1a1b;
   --surfaceVariant: #e1e2ec;
   --onSurfaceVariant: #44474f;
-  --outline: #dadada;
+  --outline: #eeeeee;
   --inverseOnSurface: #faeeef;
   --inverseSurface: #352f30;
   --primaryInverse: #acc7ff;
@@ -45,7 +45,7 @@ body {
   --primaryText: 0.87;
   --secondaryText: 0.6;
   --disabledText: 0.38;
-  --outlineSize: 0.01rem;
+  --outlineSize: 0.02rem;
 }
 
 .nav {
