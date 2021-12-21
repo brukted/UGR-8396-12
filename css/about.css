@@ -29,6 +29,7 @@
   align-items: center;
   justify-content: flex-start;
   align-content: center;
+  margin: 2rem;
 }
 
 .aside__image {
@@ -37,6 +38,8 @@
   border-radius: 50%;
   border: var(--outlineSize) solid var(--outline);
   margin: 1rem;
+  background-color: var(--surface);
+  box-shadow: rgb(0 0 0 / 3%) 0rem 0rem 1rem 0rem;
 }
 
 .aside__address {
@@ -52,7 +55,13 @@
 
 .main {
   grid-area: main;
-  padding: 1rem;
+  padding: 1.5rem;
+  margin: 2rem;
+  border: var(--outline) solid var(--outlineSize);
+  border-radius: 2rem;
+  background-color: var(--surface);
+  box-shadow: rgb(0 0 0 / 3%) 0rem 0rem 1rem 0rem;
+  max-width: 45rem;
 }
 
 .main__heading {
@@ -61,10 +70,11 @@
 }
 
 .main__body {
-  max-width: 40rem;
+  /* max-width: 40rem; */
   margin: 1rem 0rem;
   color: var(--onBackground);
   opacity: var(--primaryText);
+  font-size: large;
 }
 
 .downloadResume {

@@ -26,18 +26,19 @@
 }
 
 .profile__title {
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
   padding: 1rem 0rem;
-  color: var(--onBackground);
+  color: var(--primary);
   opacity: var(--primaryText);
 }
 
 .profile__body {
   color: var(--onBackground);
-  opacity: var(--secondaryText);
+  opacity: var(--primaryText);
+  font-size: 1.5rem;
 }
 
 .image {

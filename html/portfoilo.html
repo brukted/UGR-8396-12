@@ -4,27 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/portfoilo.css" />
     <title>Portfoilo</title>
   </head>
   <body class="body lightTheme">
     <nav class="nav">
-      <span class="nav__logo" role="presentation">Bruk Tedla</span>
+      <span class="nav__logo" aria-hidden="true">Bruk Tedla</span>
       <button
         id="nav-hamburger"
         title="hamburger"
         type="button"
         class="nav__hamburger"
       >
-        <i class="fas fa-bars"></i>
+        <img
+          class="nav__hamburgerIcon"
+          src="../images/bars-solid.svg"
+          alt="hamburger menu icon"
+          aria-hidden="true"
+        />
       </button>
       <ul class="nav__list" id="nav-list">
         <li class="nav__item">
@@ -43,10 +42,13 @@
           <a class="nav__link" href="blogs.html">Blog</a>
         </li>
         <li class="nav__item nav__item--active">
-          <a class="nav__link" href="portfoilo.html">Portfoilo</a>
+          <a class="nav__link" href="portfoilo.html">Portfolio</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../assets/resume.pdf">CV</a>
         </li>
       </ul>
     </nav>
@@ -65,13 +67,65 @@
         <div class="projectCategory__list">
           <article class="projectCard">
             <img
-              src="https://picsum.photos/300/200"
-              alt="project image"
+              src="../images/afro-screenshot.jpg"
+              alt="screenshot of afro"
               class="projectCard__image"
+              aria-hidden="true"
             />
             <p class="projectCard__body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              animi.
+              Afro; a software that allows you to create your own custom
+              textures.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="projectCategory" id="web-dev">
+        <h1 class="projectCategory__title">Web dev</h1>
+        <div class="projectCategory__list">
+          <article class="projectCard">
+            <img
+              src="../images/Days.png"
+              alt="screenshot of Days"
+              class="projectCard__image"
+              aria-hidden="true"
+            />
+            <p class="projectCard__body">
+              Days is a beautiful countdown app to all the events that matter to
+              you. Events are important, they're the small things in life that
+              matter the most. Whether it's a wedding, a holiday or just a night
+              out with your friends, Days helps you countdown to those special
+              moments.
+            </p>
+          </article>
+          <article class="projectCard">
+            <img
+              src="../images/weather-app.png"
+              alt="screenshot of weather app"
+              class="projectCard__image"
+              aria-hidden="true"
+            />
+            <p class="projectCard__body">
+              It's a weather application I built from design all the way to end
+              result. The app allows you to search for the weather no matter
+              where you are in the world. I used the geolocation function to
+              create a button that will allow you to get instant data depending
+              on your location.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="projectCategory" id="3D-graphics">
+        <h1 class="projectCategory__title">3D Graphics</h1>
+        <div class="projectCategory__list">
+          <article class="projectCard">
+            <img
+              src="../images/blender_org_homepage_ellie.jpg"
+              alt="screenshot of the blender scene"
+              class="projectCard__image"
+              aria-hidden="true"
+            />
+            <p class="projectCard__body">
+              A modelling of a house in 3D using Blender.
             </p>
           </article>
         </div>

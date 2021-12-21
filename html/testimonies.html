@@ -4,27 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/testimonies.css" />
     <title>Testimonies</title>
   </head>
   <body class="body lightTheme">
     <nav class="nav">
-      <span class="nav__logo" role="presentation">Bruk Tedla</span>
+      <span class="nav__logo" aria-hidden="true">Bruk Tedla</span>
       <button
         id="nav-hamburger"
         title="hamburger"
         type="button"
         class="nav__hamburger"
       >
-        <i class="fas fa-bars"></i>
+        <img
+          class="nav__hamburgerIcon"
+          src="../images/bars-solid.svg"
+          alt="hamburger menu icon"
+        />
       </button>
       <ul class="nav__list" id="nav-list">
         <li class="nav__item">
@@ -43,29 +40,31 @@
           <a class="nav__link" href="blogs.html">Blog</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="portfoilo.html">Portfoilo</a>
+          <a class="nav__link" href="portfoilo.html">Portfolio</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="services.html">Services</a>
         </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../assets/resume.pdf">CV</a>
+        </li>
       </ul>
     </nav>
-    <header class="header">
-      <h1 class="header__text">Testimonies</h1>
-    </header>
     <main class="main">
       <table class="testimoniesTable">
-        <!-- <thead>
+        <h1 class="header__text">Testimonies</h1>
+        <thead>
           <th>Attestant Photo</th>
           <th>Testimony</th>
           <th>Rating</th>
-        </thead> -->
+        </thead>
         <tr class="testimoniesTable__row">
           <td>
             <img
               class="testimoniesTable__image"
-              src="https://picsum.photos/200"
-              alt="attestant photo"
+              src="../images/attestant-1.jpg"
+              alt="photo of Polly Stevens"
+              aria-hidden="true"
             />
           </td>
           <td>
@@ -73,9 +72,8 @@
               class="testimoniesTable__tesimony"
               aria-label="testimony"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A non
-              tenetur deserunt laborum amet expedita. Obcaecati quidem accusamus
-              amet vel odio porro mollitia odit expedita.
+              &OpenCurlyDoubleQuote;Bruk is the mozart of web
+              design.&CloseCurlyDoubleQuote;
             </blockquote>
             <p
               class="testimoniesTable__attestantInfo"
@@ -84,7 +82,7 @@
               <span
                 class="testimoniesTable__attestantName"
                 aria-label="attestant name"
-                >John Doe</span
+                >Polly Stevens</span
               >
               <span
                 class="testimoniesTable__attestantPosition"
@@ -94,7 +92,119 @@
             </p>
           </td>
           <td>
-            <p class="testimoniesTable__rating" aria-label="rating">4.5</p>
+            <p class="testimoniesTable__rating" aria-label="rating">4.85</p>
+          </td>
+        </tr>
+        <tr class="testimoniesTable__row">
+          <td>
+            <img
+              class="testimoniesTable__image"
+              src="../images/attestant-2.jpg"
+              alt="photo of Allie Fields"
+              aria-hidden="true"
+            />
+          </td>
+          <td>
+            <blockquote
+              class="testimoniesTable__tesimony"
+              aria-label="testimony"
+            >
+              &OpenCurlyDoubleQuote;Fabulous guy! Had a blast working with
+              him.&CloseCurlyDoubleQuote;
+            </blockquote>
+            <p
+              class="testimoniesTable__attestantInfo"
+              aria-label="attestant info"
+            >
+              <span
+                class="testimoniesTable__attestantName"
+                aria-label="attestant name"
+                >Allie Fields</span
+              >
+              <span
+                class="testimoniesTable__attestantPosition"
+                aria-label="attestant position"
+                >Colleague</span
+              >
+            </p>
+          </td>
+          <td>
+            <p class="testimoniesTable__rating" aria-label="rating">4.6</p>
+          </td>
+        </tr>
+        <tr class="testimoniesTable__row">
+          <td>
+            <img
+              class="testimoniesTable__image"
+              src="../images/attestant-3.jpg"
+              alt="photo of Marvin Griffin"
+              aria-hidden="true"
+            />
+          </td>
+          <td>
+            <blockquote
+              class="testimoniesTable__tesimony"
+              aria-label="testimony"
+            >
+              &OpenCurlyDoubleQuote;He shot my website to the
+              moon.&CloseCurlyDoubleQuote;
+            </blockquote>
+            <p
+              class="testimoniesTable__attestantInfo"
+              aria-label="attestant info"
+            >
+              <span
+                class="testimoniesTable__attestantName"
+                aria-label="attestant name"
+                >Marvin Griffin</span
+              >
+              <span
+                class="testimoniesTable__attestantPosition"
+                aria-label="attestant position"
+                >Client</span
+              >
+            </p>
+          </td>
+          <td>
+            <p class="testimoniesTable__rating" aria-label="rating">5.0</p>
+          </td>
+        </tr>
+        <tr class="testimoniesTable__row">
+          <td>
+            <img
+              class="testimoniesTable__image"
+              src="../images/attestant-4.jpg"
+              alt="photo of Marion Doe"
+              aria-hidden="true"
+            />
+          </td>
+          <td>
+            <blockquote
+              class="testimoniesTable__tesimony"
+              aria-label="testimony"
+            >
+              &OpenCurlyDoubleQuote;His redesign of my app has helped me to
+              improve and attract new customers. I would defiantly recommend
+              him.&CloseCurlyDoubleQuote;
+            </blockquote>
+            <p
+              class="testimoniesTable__attestantInfo"
+              aria-label="attestant info"
+            >
+              <span
+                class="testimoniesTable__attestantName"
+                aria-label="attestant name"
+                >Marion Doe</span
+              >
+              <span
+                class="testimoniesTable__attestantPosition"
+                aria-label="attestant position"
+                >Client</span
+              >
+            </p>
+          </td>
+          <td>
+            <p class="testimoniesTable__rating" aria-label="rating">4.2</p>
           </td>
         </tr>
       </table>

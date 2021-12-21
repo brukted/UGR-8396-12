@@ -4,27 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/profile.css" />
     <title>Bruk Tedla</title>
   </head>
   <body class="body lightTheme">
     <nav class="nav">
-      <span class="nav__logo" role="presentation">Bruk Tedla</span>
+      <span class="nav__logo" aria-hidden="true">Bruk Tedla</span>
       <button
         id="nav-hamburger"
         title="hamburger"
         type="button"
         class="nav__hamburger"
       >
-        <i class="fas fa-bars"></i>
+        <img
+          class="nav__hamburgerIcon"
+          src="../images/bars-solid.svg"
+          alt="hamburger menu icon"
+        />
       </button>
       <ul class="nav__list" id="nav-list">
         <li class="nav__item nav__item--active">
@@ -43,10 +41,18 @@
           <a class="nav__link" href="html/blogs.html">Blog</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="html/portfoilo.html">Portfoilo</a>
+          <a class="nav__link" href="html/portfoilo.html">Portfolio</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="html/services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a
+            class="nav__link"
+            href="../assets/resume.pdf"
+            title="Open a PDF copy of bruk tedla's resume"
+            >CV</a
+          >
         </li>
       </ul>
     </nav>
@@ -54,14 +60,16 @@
       class="image"
       src="images/bruktedla.png"
       alt="photo of bruk tedla"
-      role="presentation"
+      aria-hidden="true"
     />
     <main class="profile">
-      <h1 class="profile__title">Biruk Tedla</h1>
+      <h1 class="profile__title">
+        Hi,<br />
+        I'm Bruk Tedla
+      </h1>
       <p class="profile__body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-        aliquid odio aut repellendus! Placeat, eum nobis. Obcaecati veniam totam
-        id alias quos illo impedit sequi velit enim atque, sunt sit.
+        A full-stack web developer with a passion for creating beautiful and
+        functional websites.
       </p>
     </main>
     <footer class="footer">
