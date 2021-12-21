@@ -19,7 +19,7 @@
   justify-content: space-around;
   align-content: flex-start;
   margin: auto;
-  margin-top: 0em;
+  margin-top: 0rem;
   grid-area: content;
 }
 
@@ -42,6 +42,8 @@
   text-align: right;
   width: 100%;
   max-width: 40em;
+  background-color: var(--surface);
+  color: var(--onSurface);
 }
 
 .searchBar__searchBtn {
@@ -59,6 +61,9 @@
 
 .searchBar__searchBtnIcon {
   display: none;
+  width: 1rem;
+  height: 1rem;
+  filter: invert();
 }
 
 @media screen and (max-width: 375px) {
@@ -79,7 +84,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: flex-start;
   gap: 2em;
   padding: 1em;
@@ -90,12 +95,13 @@
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: flex-start;
   max-width: 30em;
   border-radius: 1em;
-  /* padding: 1em; */
   border: var(--outlineSize) solid var(--outline);
   background-color: var(--surface);
+  color: var(--onSurface);
+  box-shadow: rgb(0 0 0 / 3%) 0rem 0rem 1rem 0rem;
 }
 
 .blogCard__img {
@@ -110,12 +116,12 @@
 
 .blogCard__text {
   margin: 1em;
-  color: var(--onSurface);
   opacity: var(--helperText, 0.6);
 }
 
 .blogCard__title {
   margin: 1rem;
+  opacity: var(--primaryText);
 }
 
 .blogCard__link {
@@ -127,4 +133,5 @@
   background-color: var(--primary);
   border-radius: 3em;
   margin: 1rem;
+  margin-top: auto;
 }

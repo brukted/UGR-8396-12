@@ -4,27 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/contact.css" />
     <title>Contact</title>
   </head>
   <body class="body lightTheme">
     <nav class="nav">
-      <span class="nav__logo">Bruk Tedla</span>
+      <span class="nav__logo" aria-hidden="true">Bruk Tedla</span>
       <button
         id="nav-hamburger"
         title="hamburger"
         type="button"
         class="nav__hamburger"
       >
-        <i class="fas fa-bars"></i>
+        <img
+          class="nav__hamburgerIcon"
+          src="../images/bars-solid.svg"
+          alt="hamburger menu icon"
+        />
       </button>
       <ul class="nav__list" id="nav-list">
         <li class="nav__item">
@@ -43,45 +41,55 @@
           <a class="nav__link" href="blogs.html">Blog</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="portfoilo.html">Portfoilo</a>
+          <a class="nav__link" href="portfoilo.html">Portfolio</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="services.html">Services</a>
         </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../assets/resume.pdf" >CV</a>
+        </li>
       </ul>
     </nav>
-    <main class="contactMe">
+    <main class="main">
+      <div class="contactMe">
         <h1 class="contactMe__header">Contact Me</h1>
         <p class="contactMe__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quis
-          incidunt quos suscipit totam eos assumenda sunt reiciendis, architecto
-          eum temporibus veritatis, libero, ullam amet possimus! Quas minima
-          distinctio et.
+          I am available for hire and open to any ideas of cooperation. If you have any questions, please feel free to contact me. I will be happy to answer your questions.
         </p>
         <div class="socialMedias">
-          <a title="facebook link" href="#" class="socialMedia__btn">
-            <span class="fab fa-facebook-f"></span>
+          <a title="Contact me on facebook" href="#" class="socialMedia__btn">
+             <img class="socialMedia__icon"
+          src="../images/facebook-f-brands.svg"
+          alt="facebook logo" aria-hidden="true"/>
           </a>
-          <a  title="twitter link" href="#" class="socialMedia__btn">
-            <span class="fab fa-twitter"></span>
+          <a  title="Follow me on twitter" href="#" class="socialMedia__btn">
+            <img class="socialMedia__icon"
+          src="../images/twitter-brands.svg"
+          alt="twitter logo" aria-hidden="true"/>
           </a>
-          <a title="instagram link" href="#" class="socialMedia__btn">
-            <span class="fab fa-instagram"></span>
+          <a title="Follow me on instagram" href="#" class="socialMedia__btn">
+            <img class="socialMedia__icon"
+          src="../images/instagram-brands.svg"
+          alt="instagram logo" aria-hidden="true"/>
           </button>
-          <a  title="linkedin link" href="#" class="socialMedia__btn">
-            <span class="fab fa-linkedin-in"></span>
+          <a  title="Follow me on linkedin" href="#" class="socialMedia__btn">
+            <img class="socialMedia__icon"
+          src="../images/linkedin-in-brands.svg"
+          alt="linkedin logo" aria-hidden="true"/>
           </a>
         </div>
-    </main>
-      <form class="form">
-        <h1 class="form__title">Subscribe to my weekly newsletters</h1>
-        <div class="form__inputGrid">
-        <label for="firstName">First name</label><input class="form__input" id = "firstName"type="text" name="firstName" placeholder="john"/>
-        <label for="lastName">Last name</label><input  class="form__input"id = "lastName"type="text" name="lastName" placeholder="doe" />
-        <label for="email">Email</label><input  class="form__input"id="email"type="email" name="email" placeholder="jhon.doe2432@xyz.com" />
         </div>
-        <button class="form__subBtn"type="submit">Subscribe</button>
-      </form>
+        <form class="form" aria-label="send message form">
+          <h1 class="form__title">Have A Project Or Want To Talk?</h1>
+          <div class="form__inputGrid">
+          <label for="name">Name</label><input class="form__input" id="name" type="text" name="name" placeholder="Enter your name here"/>
+          <label for="email">Email</label><input  class="form__input" id="email" type="email" name="email"  placeholder="Enter your email here"/>
+          <label for="message">Message</label><textarea class="form__input" name="message" id="message" cols="40" rows="7" placeholder="Enter your message here"></textarea>
+          </div>
+          <button class="form__subBtn"type="submit" aria-label="send message">Send</button>
+        </form>
+    </main>
     <footer class="footer">
       <p class="footer__text">&copy; 2021, All rights reserved</p>
     </footer>

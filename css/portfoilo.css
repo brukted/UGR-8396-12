@@ -76,6 +76,7 @@
   border: var(--outlineSize) solid var(--outline);
   border-radius: 1rem;
   background: var(--surface);
+  box-shadow: rgb(0 0 0 / 3%) 0rem 0rem 1rem 0rem;
 }
 
 .projectCategory__list {
@@ -101,6 +102,8 @@
   background-color: var(--surface);
   border-radius: 1rem;
   border: var(--outlineSize) solid var(--outline);
+  box-shadow: rgb(0 0 0 / 8%) 0px 0px 17px 0px;
+  max-width: 20em;
 }
 
 .projectCard__image {
@@ -110,7 +113,6 @@
 
 .projectCard__body {
   padding: 1rem;
-  max-width: 20em;
   color: var(--onSurface);
   opacity: var(--primaryText);
 }

@@ -4,27 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/blogs.css" />
     <title>Blogs</title>
   </head>
   <body class="body lightTheme">
     <nav class="nav">
-      <span class="nav__logo">Bruk Tedla</span>
+      <span class="nav__logo" aria-hidden="true">Bruk Tedla</span>
       <button
         id="nav-hamburger"
         title="hamburger"
         type="button"
         class="nav__hamburger"
       >
-        <i class="fas fa-bars"></i>
+        <img
+          class="nav__hamburgerIcon"
+          src="../images/bars-solid.svg"
+          alt="hamburger menu icon"
+        />
       </button>
       <ul class="nav__list" id="nav-list">
         <li class="nav__item">
@@ -43,76 +41,80 @@
           <a class="nav__link" href="blogs.html">Blog</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="portfoilo.html">Portfoilo</a>
+          <a class="nav__link" href="portfoilo.html">Portfolio</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="services.html">Services</a>
         </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../assets/resume.pdf">CV</a>
+        </li>
       </ul>
     </nav>
-    <form class="searchBar">
+    <form class="searchBar" role="search" autocomplete="off">
       <input
         type="text"
         class="searchBar__input"
         placeholder="type here"
-        title="search text"
+        aria-label="search keywords"
       />
-      <button type="submit" class="searchBar__searchBtn">
-        <p class="searchBar__searchBtnText">Search</p>
-        <i class="fas fa-search searchBar__searchBtnIcon"></i>
+      <button type="submit" class="searchBar__searchBtn" aria-label="search">
+        <p class="searchBar__searchBtnText" aria-hidden="true">Search</p>
+        <img
+          class="searchBar__searchBtnIcon"
+          src="../images/search-solid.svg"
+          alt="search icon"
+          aria-hidden="true"
+          aria-hidden="true"
+        />
       </button>
     </form>
-    <main class="blogsList">
+    <main class="blogsList" aria-label="list of blogs written by bruk tedla">
       <article class="blogCard">
         <img
           class="blogCard__img"
-          src="https://picsum.photos/200/300"
-          alt="blog banner"
+          src="../images/credit-card-validation-form.png"
+          alt="Making a Simple Credit Card Validation Form banner"
+          aria-hidden="true"
         />
         <h1 class="blogCard__title">
-          Lorem ipsum dolor sit amet consectetur adipisicing.
+          Making a Simple Credit Card Validation Form
         </h1>
         <p class="blogCard__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-          pariatur minus inventore deserunt accusantium non voluptas corrupti
-          minima, enim illum, cupiditate ex recusandae nulla nam nemo! Modi vero
-          facere necessitatibus?
+          A tutorial for web development beginners that teaches you important
+          skills such as JavaScript form validation, working with Bootstrap 3,
+          and integrating useful JS libraries.
         </p>
-        <a class="blogCard__link" href="#">View</a>
       </article>
       <article class="blogCard">
         <img
           class="blogCard__img"
-          src="https://picsum.photos/200/300"
-          alt="blog banner"
+          src="../images/async-await.png"
+          alt="JavaScript Async/Await Explained in 10 Minutes banner"
+          aria-hidden="true"
         />
         <h1 class="blogCard__title">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit
+          JavaScript Async/Await Explained in 10 Minutes
         </h1>
         <p class="blogCard__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-          pariatur minus inventore deserunt accusantium non voluptas corrupti
-          minima, enim illum, cupiditate ex recusandae nulla nam nemo! Modi vero
-          facere necessitatibus?
+          A quick introduction into one of the most highly anticipated new
+          JavaScript features.
         </p>
-        <a class="blogCard__link" href="#">View</a>
       </article>
       <article class="blogCard">
         <img
           class="blogCard__img"
-          src="https://picsum.photos/200/300"
-          alt="blog banner"
+          src="../images/12-terminal-commands-for-web-developers-.png"
+          alt="12 Terminal Commands Every Web Developer Should Know About banner"
+          aria-hidden="true"
         />
         <h1 class="blogCard__title">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit
+          12 Terminal Commands Every Web Developer Should Know About
         </h1>
         <p class="blogCard__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-          pariatur minus inventore deserunt accusantium non voluptas corrupti
-          minima, enim illum, cupiditate ex recusandae nulla nam nemo! Modi vero
-          facere necessitatibus?
+          A collection of Unix commands that will greatly improve your web dev
+          workflow.
         </p>
-        <a class="blogCard__link" href="#">View</a>
       </article>
     </main>
     <footer class="footer">

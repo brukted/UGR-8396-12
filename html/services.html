@@ -4,27 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/services.css" />
     <title>Services</title>
   </head>
   <body class="body lightTheme">
     <nav class="nav">
-      <span class="nav__logo">Bruk Tedla</span>
+      <span class="nav__logo" aria-hidden="true">Bruk Tedla</span>
       <button
         id="nav-hamburger"
         title="hamburger"
         type="button"
         class="nav__hamburger"
       >
-        <i class="fas fa-bars"></i>
+        <img
+          class="nav__hamburgerIcon"
+          src="../images/bars-solid.svg"
+          alt="hamburger menu icon"
+        />
       </button>
       <ul class="nav__list" id="nav-list">
         <li class="nav__item">
@@ -43,77 +41,69 @@
           <a class="nav__link" href="blogs.html">Blog</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="portfoilo.html">Portfoilo</a>
+          <a class="nav__link" href="portfoilo.html">Portfolio</a>
         </li>
         <li class="nav__item nav__item--active">
           <a class="nav__link" href="services.html">Services</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../assets/resume.pdf">CV</a>
         </li>
       </ul>
     </nav>
     <main class="servicesList">
       <article class="serviceRow">
         <div class="serviceRow__body">
-          <h1 class="serviceRow__title">Lorem ipsum dolor sit amet.</h1>
+          <h1 class="serviceRow__title">Web design</h1>
           <p class="serviceRow__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-            consequatur dolor culpa accusamus magnam nesciunt, perspiciatis
-            dolorum illo debitis ipsum, commodi accusantium laborum
-            exercitationem voluptatem! Aliquid saepe ipsa odit totam commodi
-            repellat dolorum sapiente quis corrupti assumenda autem quo
-            consequatur eius magnam ratione quidem, dolor et dolores. Ipsa
-            consequatur velit delectus voluptates itaque quaerat neque libero
-            nam, exercitationem incidunt rerum!
+            Defining the problem, identifying the scope and finally, organizing
+            the design plan, LOGO proposal, colors setup to bring out 100% of
+            every project. I can help you to create a website that will be a
+            part of your business.
           </p>
         </div>
         <div class="serviceRow__imageWrapper">
           <img
             class="serviceRow__image"
-            src="https://picsum.photos/300/200"
-            alt="service banner"
+            src="../images/web-design.jpg"
+            alt="web design banner"
+            aria-hidden="true"
           />
         </div>
       </article>
       <article class="serviceRow">
         <div class="serviceRow__body">
-          <h1 class="serviceRow__title">Lorem ipsum dolor sit amet.</h1>
+          <h1 class="serviceRow__title">Web development</h1>
           <p class="serviceRow__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-            consequatur dolor culpa accusamus magnam nesciunt, perspiciatis
-            dolorum illo debitis ipsum, commodi accusantium laborum
-            exercitationem voluptatem! Aliquid saepe ipsa odit totam commodi
-            repellat dolorum sapiente quis corrupti assumenda autem quo
-            consequatur eius magnam ratione quidem, dolor et dolores. Ipsa
-            consequatur velit delectus voluptates itaque quaerat neque libero
-            nam, exercitationem incidunt rerum!
+            The web development will ensure a high performance for you website,
+            secure which will provide you success, and will be dedicated to your
+            business.
           </p>
         </div>
         <div class="serviceRow__imageWrapper">
           <img
             class="serviceRow__image"
-            src="https://picsum.photos/300/200"
-            alt="service banner"
+            src="../images/web-development.jpg"
+            alt="web development banner"
+            aria-hidden="true"
           />
         </div>
       </article>
       <article class="serviceRow">
         <div class="serviceRow__body">
-          <h1 class="serviceRow__title">Lorem ipsum dolor sit amet.</h1>
+          <h1 class="serviceRow__title">App Design</h1>
           <p class="serviceRow__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-            consequatur dolor culpa accusamus magnam nesciunt, perspiciatis
-            dolorum illo debitis ipsum, commodi accusantium laborum
-            exercitationem voluptatem! Aliquid saepe ipsa odit totam commodi
-            repellat dolorum sapiente quis corrupti assumenda autem quo
-            consequatur eius magnam ratione quidem, dolor et dolores. Ipsa
-            consequatur velit delectus voluptates itaque quaerat neque libero
-            nam, exercitationem incidunt rerum!
+            Businesses optimise their online presence across desktop, tablet and
+            mobile device. The project will be responsive, it will run on
+            multiple screen.
           </p>
         </div>
         <div class="serviceRow__imageWrapper">
           <img
             class="serviceRow__image"
-            src="https://picsum.photos/300/200"
-            alt="service banner"
+            src="../images/app-design.jpg"
+            alt="app design banner"
+            aria-hidden="true"
           />
         </div>
       </article>

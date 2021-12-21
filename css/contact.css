@@ -13,10 +13,10 @@
 .body {
   display: grid;
   grid-template-areas:
-    "nav nav"
-    "contactMe form"
-    "footer footer";
-  grid-template-columns: 1fr 1fr;
+    "nav"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   justify-content: center;
   align-items: center;
@@ -33,6 +33,14 @@
     grid-template-rows: auto auto auto auto;
   }
 }
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
 
 .contactMe {
   margin: 1em;
@@ -40,7 +48,9 @@
   border: var(--outlineSize) solid var(--outline);
   border-radius: 3em;
   background-color: var(--surface);
-  grid-area: contactMe;
+  color: var(--onSurface);
+  opacity: var(--primaryText);
+  box-shadow: rgb(0 0 0 / 3%) 0rem 0rem 1rem 0rem;
 }
 
 .contactMe__text {
@@ -60,13 +70,10 @@
   border: var(--outlineSize) solid var(--outline);
   border-radius: 3em;
   background-color: var(--surface);
+  color: var(--onSurface);
+  opacity: var(--primaryText);
   grid-area: form;
-}
-
-.form__title {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-align: center;
+  box-shadow: rgb(0 0 0 / 3%) 0rem 0rem 1rem 0rem;
 }
 
 .form__subBtn {
@@ -92,6 +99,7 @@
 
 .form__input:focus {
   border: var(--outlineSize) solid var(--primary);
+  mask-border: none;
 }
 
 .form__inputGrid {
@@ -123,11 +131,10 @@
 }
 
 .socialMedia__btn {
-  background: transparent;
+  background: inherit;
   border: 0;
   font-size: 1.5em;
   text-decoration: none;
-  color: var(--onSurface);
   transition: color 0.2s ease-in-out;
   width: 1.5em;
   height: 1.5em;
@@ -135,11 +142,22 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  background-blend-mode: multiply;
 }
 
 .socialMedia__btn:hover {
   background-color: var(--primary);
-  color: var(--onPrimary);
   transition: color 0.4s ease-in-out;
   transition: background-color 0.4s ease-in-out;
+}
+
+.socialMedia__icon:hover {
+  filter: invert();
+  transition: background-color 0.4s ease-in-out;
+}
+
+.socialMedia__icon {
+  background-color: transparent;
+  width: 1em;
+  height: 1em;
 }
