@@ -38,12 +38,15 @@
 }
 
 .projectTags__tag {
-  text-decoration: none;
   padding: 0.75rem;
   background-color: var(--primary);
+  border-radius: 1.5rem;
+}
+
+.projectTags__link {
+  text-decoration: none;
   color: var(--onPrimary);
   opacity: var(--primaryText);
-  border-radius: 1.5rem;
 }
 
 .projectCategory__title {
