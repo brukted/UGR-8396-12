@@ -56,7 +56,7 @@
 .main {
   grid-area: main;
   padding: 1.5rem;
-  margin: 2rem;
+  margin: 2rem 1rem;
   border: var(--outline) solid var(--outlineSize);
   border-radius: 2rem;
   background-color: var(--surface);
@@ -75,28 +75,4 @@
   color: var(--onBackground);
   opacity: var(--primaryText);
   font-size: large;
-}
-
-.downloadResume {
-  position: fixed;
-  bottom: 4.5rem;
-  right: 0rem;
-  padding: 0.6rem;
-  border-radius: 3rem;
-  background: var(--primary);
-  color: var(--onPrimary);
-  margin: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-.downloadResume__icon {
-  margin: 0.5rem;
-  font-size: 1.5rem;
-}
-
-.downloadResume__text {
-  padding: 0.2rem;
 }
