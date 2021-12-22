@@ -1,3 +1,4 @@
-# Portfoilo
+# Personal Portfoilo and Profile Page
 
-A personal portifoilio website I am developing as part of my web dev fundamentals coursework.
+Name : Bruk Tedla Tafesse  
+ID : UGR/8396/12
