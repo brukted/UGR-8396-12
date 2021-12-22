@@ -60,6 +60,16 @@
   font-size: large;
 }
 
+@media screen and (max-width: 910px) {
+  .testimoniesTable__image {
+    max-width: 5rem;
+  }
+  .testimoniesTable {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+}
+
 .testimoniesTable__attestantInfo {
   display: flex;
   flex-direction: column;

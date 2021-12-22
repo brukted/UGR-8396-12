@@ -121,6 +121,15 @@
     grid-template-areas: "contactMe" "form";
     width: 100%;
   }
+  .form__title {
+    font-size: 1.5em;
+  }
+  .contactMe__header {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 425px) {
 }
 
 .socialMedias {
