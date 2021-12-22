@@ -63,6 +63,7 @@ body {
   justify-content: space-between;
   height: auto;
   box-shadow: rgb(0 0 0 / 3%) 0rem 0rem 1rem 0rem;
+  position: -webkit-sticky;
   position: sticky;
   top: 0rem;
 }
@@ -128,7 +129,7 @@ body {
   height: 2rem;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 63.75rem) {
   .nav__list {
     display: none;
   }

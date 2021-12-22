@@ -49,7 +49,7 @@
   grid-area: image;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 52.5rem) {
   .body {
     display: grid;
     grid-template-areas: "nav" "image" "profile" "footer";
