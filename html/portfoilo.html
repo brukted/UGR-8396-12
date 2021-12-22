@@ -55,84 +55,73 @@
     </header>
     <nav class="projectTags">
       <div class="projectTags__tag">
-        <a class="projectTags__link" href="#cpp">C++</a>
+        <button type="button" class="projectTags__button" id="allTag">
+          All
+        </button>
       </div>
       <div class="projectTags__tag">
-        <a class="projectTags__link" href="#web-dev">Web Dev</a>
+        <button type="button" class="projectTags__button" id="cppTag">
+          C++
+        </button>
       </div>
       <div class="projectTags__tag">
-        <a class="projectTags__link" href="#3D-graphics">3D Graphics</a>
+        <button type="button" class="projectTags__button" id="webDevTag">
+          Web Dev
+        </button>
+      </div>
+      <div class="projectTags__tag">
+        <button type="button" class="projectTags__button" id="3dGraphicsTag">
+          3D Graphics
+        </button>
       </div>
     </nav>
-    <main class="projectCategories">
-      <div class="projectCategory" id="cpp">
-        <h1 class="projectCategory__title">C++</h1>
-        <div class="projectCategory__list">
-          <article class="projectCard">
-            <img
-              src="../images/afro-screenshot.jpg"
-              alt="screenshot of afro"
-              class="projectCard__image"
-              aria-hidden="true"
-            />
-            <p class="projectCard__body">
-              Afro; a software that allows you to create your own custom
-              textures.
-            </p>
-          </article>
-        </div>
-      </div>
-      <div class="projectCategory" id="web-dev">
-        <h1 class="projectCategory__title">Web dev</h1>
-        <div class="projectCategory__list">
-          <article class="projectCard">
-            <img
-              src="../images/Days.png"
-              alt="screenshot of Days"
-              class="projectCard__image"
-              aria-hidden="true"
-            />
-            <p class="projectCard__body">
-              Days is a beautiful countdown app to all the events that matter to
-              you. Events are important, they're the small things in life that
-              matter the most. Whether it's a wedding, a holiday or just a night
-              out with your friends, Days helps you countdown to those special
-              moments.
-            </p>
-          </article>
-          <article class="projectCard">
-            <img
-              src="../images/weather-app.png"
-              alt="screenshot of weather app"
-              class="projectCard__image"
-              aria-hidden="true"
-            />
-            <p class="projectCard__body">
-              It's a weather application I built from design all the way to end
-              result. The app allows you to search for the weather no matter
-              where you are in the world. I used the geolocation function to
-              create a button that will allow you to get instant data depending
-              on your location.
-            </p>
-          </article>
-        </div>
-      </div>
-      <div class="projectCategory" id="3D-graphics">
-        <h1 class="projectCategory__title">3D Graphics</h1>
-        <div class="projectCategory__list">
-          <article class="projectCard">
-            <img
-              src="../images/blender_org_homepage_ellie.jpg"
-              alt="screenshot of the blender scene"
-              class="projectCard__image"
-              aria-hidden="true"
-            />
-            <p class="projectCard__body">
-              A modelling of a house in 3D using Blender.
-            </p>
-          </article>
-        </div>
-      </div>
+    <main class="projects">
+      <article class="projectCard" projectType="c++">
+        <img
+          src="../images/afro-screenshot.jpg"
+          alt="screenshot of afro"
+          class="projectCard__image"
+          aria-hidden="true"
+        />
+        <p class="projectCard__body">
+          Afro; a software that allows you to create your own custom textures.
+        </p>
+      </article>
+      <article class="projectCard" projectType="web-dev">
+        <img
+          src="../images/Days.png"
+          alt="screenshot of Days"
+          class="projectCard__image"
+          aria-hidden="true"
+        />
+        <p class="projectCard__body">
+          Days is a beautiful countdown app to all the events that matter to
+          you.
+        </p>
+      </article>
+      <article class="projectCard" projectType="web-dev">
+        <img
+          src="../images/weather-app.png"
+          alt="screenshot of weather app"
+          class="projectCard__image"
+          aria-hidden="true"
+        />
+        <p class="projectCard__body">
+          It's a weather application I built from design all the way to end
+          result.
+        </p>
+      </article>
+      <article class="projectCard" projectType="3D-graphics">
+        <img
+          src="../images/blender_org_homepage_ellie.jpg"
+          alt="screenshot of the blender scene"
+          class="projectCard__image"
+          aria-hidden="true"
+        />
+        <p class="projectCard__body">
+          A modelling of a house in 3D using Blender.
+        </p>
+      </article>
     </main>
 
     <footer class="footer">
@@ -140,4 +129,5 @@
     </footer>
   </body>
   <script src="../js/script.js"></script>
+  <script src="../js/portfoilo.js"></script>
 </html>
